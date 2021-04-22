@@ -1,0 +1,12 @@
+django==3.1
+python-dotenv
+gunicorn
+whitenoise
+django-filter
+django-cors-headers
+djangorestframework
+geoip2
+django-ipware
+python-jose[cryptography]
+locust
+drf-spectacular

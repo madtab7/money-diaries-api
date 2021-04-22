@@ -1,0 +1,15 @@
+openapi: 3.0.3
+info:
+  title: Money Diaries API
+  version: null
+paths:
+  /entries/:
+    get:
+      operationId: entries_retrieve
+      description: Returns all entries
+      tags:
+      - entries
+      responses:
+        '200':
+          description: No response body
+components: {}

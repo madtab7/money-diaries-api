@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="{{dist}}/swagger-ui.css" />
+<style>
+  .nav-item {
+    display: none;
+  }
+  .swagger-ui .info {
+    margin: 10px 0;
+  }
+  .swagger-ui .svg-assets {
+    display: none;
+  }
+  .swagger-ui .scheme-container {
+    padding: 10px 0;
+    box-shadow: none;
+  }
+  .swagger-ui .opblock-description-wrapper p {
+    font-size: 16px;
+  }
+</style>
+
+<div id="swagger-ui"></div>
+<script src="{{dist}}/swagger-ui-bundle.js"></script>
+<script src="{{dist}}/swagger-ui-standalone-preset.js" charset="UTF-8"></script>
+{% if script_url %}
+<script src="{{script_url|safe}}"></script>
+{% else %}
+<script>
+  {% include template_name_js %}
+</script>
+{% endif %}

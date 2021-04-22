@@ -1,0 +1,17 @@
+venv/
+staticfiles/
+.DS_Store
+*.log
+*.pot
+*.pyc
+__pycache__/
+.env
+.vscode/
+**/__pycache__
+Pipfile
+Pipfile.lock
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
